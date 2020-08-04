@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
     <meta name="format-detection" content="telephone=no, email=no">
-    <title>腾讯文档</title>
+    <title>puppeteer test</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -52,18 +52,6 @@
   --slide-stage-shadow: 0 0 3px 0 rgba(204, 204, 204, 0.4);
   --select-list-shadow: 0 0 8px 4px rgba(204, 204, 204, 0.3);
   --selected-editor-component-shadow: inset 0 0 5px #ccc;
-
-
-
-
-  /* Z-Index */ 
-
-  /*
-      1、z-index仅在定位元素（position不等于static）中有效。
-      2、z-index层叠水平的比较仅限于父级层叠上下文中。
-      3、在开发中尽量避免层叠上下文的多层嵌套，因为层叠上下文嵌套过多的话容易产生混乱。　　
-      4、非modal元素（对话框等）尽量不要用z-index（通过层叠顺序或者dom顺序或者通过层叠上下文进行处理）。
-  */
 
 
   /* z-index-base ------ 基础z-index */
@@ -250,242 +238,17 @@
   white-space: nowrap;
   letter-spacing: -0.4px;
 }
-</style><style type="text/css">.ppt-editor-cursor-global-brush_cursor-2FQ2j {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-text_brush_cursor-7UEAy {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-auto-3GgYO {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
+</style><style type="text/css">
+    
 .ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-inherit-QRqYm {
   cursor: inherit;
 }
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-text-rXh6J {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-pointer-3WzTB {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-move-2Ur9s {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-grab-2is1N {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-grabbing-3AET6 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-row-resize-3YNna {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-col-resize-2gioc {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-n-resize-1L8vg {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-s-resize-3EhDF {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-e-resize-1ivxN {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-w-resize-3eOR7 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-ns-resize-1-Isf {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-ne-resize-2T2zb {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-ew-resize-34wNV {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-nwse-resize-2I4g4 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-nesw-resize-2YtwP {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-select_top-KEWJh {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-select_bottom-tiPxy {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-select_left-3H5k- {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-select_right-SP-5H {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_brush-1HSSt .ppt-editor-cursor-global-select_cell-3NMwf {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-auto-3GgYO {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
+
 .ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-inherit-QRqYm {
   cursor: inherit;
 }
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-text-rXh6J {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-pointer-3WzTB {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 3 3, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush-a169a3.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/shape_brush@2x-06ebb1.png) 2x) 3 3, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-move-2Ur9s {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-grab-2is1N {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-grabbing-3AET6 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-row-resize-3YNna {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-col-resize-2gioc {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-n-resize-1L8vg {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-s-resize-3EhDF {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-e-resize-1ivxN {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-w-resize-3eOR7 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-ns-resize-1-Isf {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-ne-resize-2T2zb {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-ew-resize-34wNV {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-nwse-resize-2I4g4 {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-nesw-resize-2YtwP {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-select_top-KEWJh {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-select_bottom-tiPxy {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-select_left-3H5k- {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-select_right-SP-5H {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
-.ppt-editor-cursor-global-format_text_brush-37qh1 .ppt-editor-cursor-global-select_cell-3NMwf {
-  cursor: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 10 10, auto;
-  cursor: -webkit-image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-  cursor: image-set(url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush-71f601.png) 1x, url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/img/cursors/text_brush@2x-8a112b.png) 2x) 10 10, auto;
-}
+
+
 .ppt-editor-cursor-global-normal_select-3JXTG .ppt-editor-cursor-global-auto-3GgYO {
   cursor: auto;
 }
@@ -732,16 +495,6 @@
 
 
 
-  /* Z-Index */ 
-
-  /*
-      1、z-index仅在定位元素（position不等于static）中有效。
-      2、z-index层叠水平的比较仅限于父级层叠上下文中。
-      3、在开发中尽量避免层叠上下文的多层嵌套，因为层叠上下文嵌套过多的话容易产生混乱。　　
-      4、非modal元素（对话框等）尽量不要用z-index（通过层叠顺序或者dom顺序或者通过层叠上下文进行处理）。
-  */
-
-
   /* z-index-base ------ 基础z-index */
   --z-index-base-negative: -1;                               /* 负值 */
   --z-index-base-none: 0;                                    /* none,  特殊设置， 一般默认是auto */
@@ -805,26 +558,6 @@
 .slide-isCroping-3nEnH {
     z-index: var(--z-index-slide-element-croping);
 }
-
-/* .isSelected::after { */
-
-/* content: ""; */
-
-/* display: block; */
-
-/* position: absolute; */
-
-/* width: calc(100% - 2px); */
-
-/* height: calc(100% - 2px); */
-
-/* border: var(--selected-border); */
-
-/* pointer-events: none; */
-
-/* z-index: 99; */
-
-/* } */
 
 .slide-isSelected4Image-10tDr::after {
     content: "";
@@ -985,17 +718,13 @@
   -webkit-background-size: 10px 10px;
           background-size: 10px 10px;
 }
-.index-history-item-wrapper-1DRIZ .index-fold-button-1zmRP.index-folding-3RYYx:hover {
-  background-image: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/frame/components/history/img/arrow-right-hover-846d86.png);
-}
+
 .index-history-item-wrapper-1DRIZ .index-fold-button-1zmRP.index-unfolding-1In-Q {
   background: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/frame/components/history/img/arrow-down-b7edf0.png) no-repeat center;
   -webkit-background-size: 10px 10px;
           background-size: 10px 10px;
 }
-.index-history-item-wrapper-1DRIZ .index-fold-button-1zmRP.index-unfolding-1In-Q:hover {
-  background-image: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/frame/components/history/img/arrow-down-hover-4602ae.png);
-}
+
 .index-history-item-wrapper-1DRIZ .index-main-content-3on_P {
   width: 100%;
 }
@@ -1149,9 +878,7 @@
 .index-history-item-wrapper-1DRIZ .index-revert-2XXf0:hover {
   color: #00a4ff;
 }
-.index-history-item-wrapper-1DRIZ .index-revert-2XXf0:hover .index-revert-icon-1QMZy {
-  background-image: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/frame/components/history/img/revert-hover-637ac1.png);
-}
+
 .index-history-item-wrapper-1DRIZ .index-revert-2XXf0 .index-revert-icon-1QMZy {
   width: 16px;
   height: 16px;
@@ -1231,9 +958,6 @@
 }
 .version-item-version-item-wrapper-3Ae6T .version-item-revert-3xbp4:hover {
   color: #00a4ff;
-}
-.version-item-version-item-wrapper-3Ae6T .version-item-revert-3xbp4:hover .version-item-revert-icon-16Wi9 {
-  background-image: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/frame/components/history/img/revert-hover-637ac1.png);
 }
 .version-item-version-item-wrapper-3Ae6T .version-item-revert-3xbp4 .version-item-revert-icon-16Wi9 {
   width: 16px;
@@ -1791,15 +1515,6 @@ img {
     margin-right: 10px;
 }
 
-.index-imagegt-2zWku:hover {
-    cursor: pointer;
-    background: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/editor/src/img/pageIndex/ph-tbl-hover-05a324.svg);
-}
-
-.index-imagegp-kabdn:hover {
-    cursor: pointer;
-    background: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/editor/src/img/pageIndex/ph-pic-hover-867268.svg);
-}
 </style><style type="text/css">
 .index-toolbar-1Ub-0 {
     vertical-align: middle;
@@ -1836,15 +1551,6 @@ img {
 
 .index-gray-3ZFYZ {
     opacity: 0.3;
-
-    /* -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-
-    filter: grayscale(100%);
-
-    filter: gray; */
 }
 
 .index-hover-2RsJQ:hover {
@@ -1859,17 +1565,6 @@ img {
 
 .index-selected-1Un3S {
     background-color: rgba(0, 0, 0, 0.08);
-}
-
-.index-newIcon-3sd5b {
-    content: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/editor/src/img/pageIndex/toolbar/new-c82680.svg);
-    width: 38px;
-    height: 22px;
-}
-
-.index-newIcon-3sd5b:hover {
-    cursor: pointer;
-    content: url(file:///Users/atian/Documents/workspace/Docs-PPT/server/pdf-convert/code/dist/cdn/img/framework/editor/src/img/pageIndex/toolbar/newHover-0118c8.svg);
 }
 
 .index-icon-1GKGg {
@@ -2377,19 +2072,6 @@ img {
     z-index: 99;
 }
 
-/* .group { */
-
-/* display: block; */
-
-/* } */
-
-/* .groupItem { */
-
-/* position: absolute; */
-
-/* outline: none; */
-
-/* } */
 </style><style type="text/css">.index-dragImg-Qw1pB {
     cursor: move;
     width: 27px;
